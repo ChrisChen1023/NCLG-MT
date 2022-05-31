@@ -10,12 +10,16 @@ For the irrgular mask dataset, please refer to http://masc.cs.gmu.edu/wiki/parti
 
 For the landmarks, please use https://github.com/1adrianb/face-alignment to generate landamrks as ground truth.
 
-Please use flist.py to create flist `.flist` file for truning and test.
+Please use `script/flist.py` to create `.flist` file for training and test.
 
 
-**Training**
+**Getting Started**
 ----------------------
 Set your own `config.yml` file and copy it to corresponding checkpoint folder, run:
 ```
 python train.py
+```
+For testing, run:
+```
+python test.py
 ```
