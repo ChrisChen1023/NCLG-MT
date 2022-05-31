@@ -7,4 +7,9 @@ For the full CelebA dataset, please refer to http://mmlab.ie.cuhk.edu.hk/project
 
 For the irrgular mask dataset, please refer to http://masc.cs.gmu.edu/wiki/partialconv
 
-For the landmarks, please use 
+For the landmarks, please use https://github.com/1adrianb/face-alignment to generate landamrks as ground truth.
+
+Please use flist.py to create flist `.flist` file for truning and test.
+
+**Training**
+Create a 
