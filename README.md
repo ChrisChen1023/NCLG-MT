@@ -3,6 +3,7 @@ A Cleft lip is a congenital abnormality requiring surgical repair by a specialis
 
 
 **Dataset**
+--------------------
 For the full CelebA dataset, please refer to http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
 
 For the irrgular mask dataset, please refer to http://masc.cs.gmu.edu/wiki/partialconv
