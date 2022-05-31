@@ -12,4 +12,7 @@ For the landmarks, please use https://github.com/1adrianb/face-alignment to gene
 Please use flist.py to create flist `.flist` file for truning and test.
 
 **Training**
-Set your own `config.yml` file, 
+Set your own `config.yml` file and copy it to corresponding checkpoint folder, run:
+```
+python train.py
+```
