@@ -15,7 +15,7 @@ Please use `script/flist.py` to create `.flist` file for training and testing.
 **Pre-trained model**
 --------------------
 We released the pre-trained model 
-CelebA: https://drive.google.com/drive/folders/1H9FZ-jJUkYBDcNASX8kBnmipgGgv_y7t?usp=sharing
+CelebA: [Google Drive](https://drive.google.com/drive/folders/1H9FZ-jJUkYBDcNASX8kBnmipgGgv_y7t?usp=sharing)
 
 **Getting Started**
 ----------------------
