@@ -20,6 +20,7 @@ CelebA: [Google Drive](https://drive.google.com/drive/folders/1H9FZ-jJUkYBDcNASX
 **Getting Started**
 ----------------------
 Download the pre-trained model to `./checkpoints`
+
 Set your own `config.yml` file and copy it to corresponding checkpoint folder, run:
 ```
 python train.py
