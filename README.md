@@ -12,7 +12,7 @@ For the landmarks, please use https://github.com/1adrianb/face-alignment to gene
 
 Please use `script/flist.py` to create `.flist` file for training and testing.
 
-**Dataset**
+**Pre-trained model**
 --------------------
 We released the pre-trained model 
 CelebA: https://drive.google.com/drive/folders/1H9FZ-jJUkYBDcNASX8kBnmipgGgv_y7t?usp=sharing
