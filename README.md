@@ -10,11 +10,16 @@ For the irrgular mask dataset, please refer to http://masc.cs.gmu.edu/wiki/parti
 
 For the landmarks, please use https://github.com/1adrianb/face-alignment to generate landamrks as ground truth.
 
-Please use `script/flist.py` to create `.flist` file for training and test.
+Please use `script/flist.py` to create `.flist` file for training and testing.
 
+**Dataset**
+--------------------
+We released the pre-trained model 
+CelebA: https://drive.google.com/drive/folders/1H9FZ-jJUkYBDcNASX8kBnmipgGgv_y7t?usp=sharing
 
 **Getting Started**
 ----------------------
+Download the pre-trained model to `./checkpoints`
 Set your own `config.yml` file and copy it to corresponding checkpoint folder, run:
 ```
 python train.py
