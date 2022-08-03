@@ -34,3 +34,18 @@ For testing, run:
 ```
 python test.py
 ```
+
+
+**Getting Started**
+----------------------
+If you think our code is helpful, please cite us.
+```
+@misc{chen2022feasibility,
+    title={A Feasibility Study on Image Inpainting for Non-cleft Lip Generation from Patients with Cleft Lip},
+    author={Shuang Chen and Amir Atapour-Abarghouei and Jane Kerby and Edmond S. L. Ho and David C. G. Sainsbury and Sophie Butterworth and Hubert P. H. Shum},
+    year={2022},
+    eprint={2208.01149},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
