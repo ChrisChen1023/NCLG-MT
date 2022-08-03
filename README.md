@@ -36,7 +36,7 @@ python test.py
 ```
 
 
-**Getting Started**
+**Citation**
 ----------------------
 If you think our code is helpful, please cite us.
 ```
