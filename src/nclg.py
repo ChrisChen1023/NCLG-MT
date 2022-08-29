@@ -255,7 +255,7 @@ class NCLG():
                 path_masked = os.path.join(self.results_path,self.model_name,'masked')
                 path_result = os.path.join(self.results_path, self.model_name,'result')
                 path_joint = os.path.join(self.results_path,self.model_name,'joint')
-                path_landmark_mask = os.path.join(self.results_path, self.model_name, 'landmark_mask')
+
                 path_landmark_output = os.path.join(self.results_path, self.model_name, 'landmark_output')
                 path_landmark_only = os.path.join(self.results_path, self.model_name, 'landmark_only')
 
@@ -264,15 +264,10 @@ class NCLG():
                 create_dir(path_masked)
                 create_dir(path_result)
                 create_dir(path_joint)
-                create_dir(path_landmark_mask)
+
                 create_dir(path_landmark_output)
                 create_dir(path_landmark_only)
-                landmark_mask_image = images * (1 - masks) + masks
-                landmark_mask_image = (landmark_mask_image.squeeze().cpu().numpy().transpose(1,2,0)*255).astype('uint8')
-                landmark_mask_image = landmark_mask_image.copy()
-                for i in range(landmarks.shape[1]):
-                    circle(landmark_mask_image, (int(landmarks[0, i, 0]), int(landmarks[0, i, 1])), radius=2,
-                           color=(0, 255, 0), thickness=-1)
+
 
                 landmark_output_image = outputs_img
                 landmark_output_image = (landmark_output_image.squeeze().cpu().detach().numpy().transpose(1,2,0)*255).astype('uint8')
@@ -293,8 +288,6 @@ class NCLG():
                 images_result = self.postprocess(outputs_merged)[0]
 
                 print(os.path.join(path_joint,name[:-4]+'.png'))
-                landmark_mask_image = Image.fromarray(landmark_mask_image)
-                landmark_mask_image.save(os.path.join(path_landmark_mask, name))
 
                 landmark_output_image = Image.fromarray(landmark_output_image)
                 landmark_output_image.save(os.path.join(path_landmark_output, name))

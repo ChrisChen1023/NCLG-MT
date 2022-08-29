@@ -167,6 +167,8 @@ class InpaintGenerator(BaseNetwork):
                 landmark_map[i,:,landmark_share[i,0:68,1].int()[p],landmark_share[i,0:68,0].int()[p]]=1
 
         ######### inpainting branch
+        x = self.fushion1_1(torch.cat((landmark_map,x),dim=1))
+
         x = self.decoder2(x)
         x = self.fushion2(torch.cat((f_e1*(1-mask_whole),x),dim=1))
         x = self.decoder3(x)
