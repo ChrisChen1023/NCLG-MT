@@ -21,7 +21,10 @@ Please use `script/flist.py` to create `.flist` file for training and testing.
 **Initialization**
 --------------------
 Python >=3.7
+
 pytorch
+
+
 **Pre-trained model**
 --------------------
 We released the pre-trained model 
